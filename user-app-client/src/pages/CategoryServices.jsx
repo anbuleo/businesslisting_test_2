@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import SEOHead from '../components/SEOHead';
-import SEOHead from '../components/SEOHead';
+// import SEOHead from '../components/SEOHead';
 import axios from 'axios';
 import { 
   ArrowLeft, 

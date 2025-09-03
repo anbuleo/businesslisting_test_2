@@ -178,7 +178,7 @@ const Support = () => {
           </div>
           <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone Support</h3>
           <p className="text-gray-600 mb-4">Call us for immediate assistance</p>
-          <a href="tel:+911234567890" className="btn-outline w-full">
+          <a href="tel:+919551347970" className="btn-outline w-full">
             Call Now
           </a>
         </div>

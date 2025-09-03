@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import SEOHead from '../components/SEOHead';
-import SEOHead from '../components/SEOHead';
+// import SEOHead from '../components/SEOHead';
 import axios from 'axios';
 import { 
   MapPin, 
@@ -206,11 +206,11 @@ const Home = () => {
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-gray-900">Service Categories</h2>
           <span className="text-sm text-gray-600">
-            {categories.length} categories available
+            {categories?.length} categories available
           </span>
         </div>
 
-        {categories.length === 0 ? (
+        {categories?.length === 0 ? (
           <div className="card text-center py-12">
             <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-4" />
             <h3 className="text-lg font-medium text-gray-900 mb-2">No services in your area</h3>
@@ -226,7 +226,7 @@ const Home = () => {
           </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {categories.map((category) => (
+            {categories?.map((category) => (
               <Link
                 key={category._id}
                 to={`/category/${category.slug}`}
@@ -258,7 +258,7 @@ const Home = () => {
       </div>
 
       {/* Featured Services */}
-      {featuredServices.length > 0 && (
+      {featuredServices?.length > 0 && (
         <div>
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-2xl font-bold text-gray-900">Featured Services</h2>

@@ -389,7 +389,9 @@ const ServiceDetails = () => {
                     {user?.wallet?.balance >= calculateAdvanceAmount() && (
                       <option value="wallet">Wallet (Balance: {formatCurrency(user.wallet.balance)})</option>
                     )}
-                  </p>
+                  
+                  </select>
+
                 </div>
 
                 {/* Pricing Summary */}
